@@ -1,0 +1,80 @@
+#yt-search-sorter-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  margin: 8px 0 12px 0;
+  border-radius: 10px;
+  background: var(--yt-spec-badge-chip-background, #272727);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+html:not([dark]) #yt-search-sorter-toolbar {
+  background: #f2f2f2;
+}
+
+.ytss-section {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ytss-label {
+  color: var(--yt-spec-text-secondary, #aaa);
+  font-weight: 500;
+  margin-right: 2px;
+  white-space: nowrap;
+}
+
+html:not([dark]) .ytss-label {
+  color: #606060;
+}
+
+.ytss-btn {
+  all: unset;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 18px;
+  background: var(--yt-spec-button-chip-background-hover, #3d3d3d);
+  color: var(--yt-spec-text-primary, #e8e8e8);
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+html:not([dark]) .ytss-btn {
+  background: #e0e0e0;
+  color: #0f0f0f;
+}
+
+.ytss-btn:hover {
+  background: var(--yt-spec-button-chip-background-hover, #515151);
+}
+
+html:not([dark]) .ytss-btn:hover {
+  background: #c8c8c8;
+}
+
+.ytss-btn.ytss-active {
+  background: #f1f1f1;
+  color: #0f0f0f;
+}
+
+html:not([dark]) .ytss-btn.ytss-active {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.ytss-count {
+  margin-left: auto;
+  color: var(--yt-spec-text-secondary, #aaa);
+  font-size: 12px;
+}
+
+html:not([dark]) .ytss-count {
+  color: #606060;
+}
